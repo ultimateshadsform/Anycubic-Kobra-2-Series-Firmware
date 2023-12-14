@@ -138,3 +138,5 @@ But I have some links which the community has shared that may get us closer to c
 https://gitlab.com/weidongshan/tina-d1-h
 
 https://bbs.aw-ol.com/topic/1034
+
+https://bbs.aw-ol.com/assets/uploads/files/1645007527374-r528_user_manual_v1.3.pdf
