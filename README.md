@@ -6,6 +6,20 @@ This repository contains things related to the Anycubic Kobra 2 Series 3D printe
 
 [Link (klipper.discourse.group)](https://klipper.discourse.group/t/printer-cfg-for-anycubic-kobra-2-plus-pro-max/11658)
 
+## Firmware Update via USB
+
+1. To update the firmware via USB, you need to do the following:
+
+2. Format a USB drive to FAT32 or exFAT.
+
+3. Create a folder called `update` on the USB drive.
+
+4. Copy the `update.swu` file to the `update` folder.
+
+5. Plug the USB drive into the printer.
+
+6. Then it should be detected and you can update the firmware via usb.
+
 ## Root
 
 At the moment the only way to get root access is to use the serial console. The serial console is available on the 4 pin header on the mainboard.
@@ -26,7 +40,7 @@ bootd
 
 Now you have a root shell.
 
-Now you need to override the root password. To do this, you need to mount the overlay partition:
+3. Now you need to override the root password. To do this, you need to mount the overlay partition:
 
 ```sh
 mount -t proc p /proc
@@ -46,15 +60,15 @@ link_by_name
 do_initramfs_config
 ```
 
-Then you can override the root password:
+4. Then you can override the root password:
 
 ```sh
 cp /etc/shadow /overlay/upper/etc/shadow
 ```
 
-Just replace the password hash with something. You can use [this website](https://unix4lyfe.org/crypt/) to generate a password hash.
+5. Just replace the password hash with something. You can use [this website](https://unix4lyfe.org/crypt/) to generate a password hash.
 
-After that is done, you need to reboot into U-Boot again and change the bootargs back to normal:
+6. After that is done, you need to reboot into U-Boot again and change the bootargs back to normal:
 
 ```sh
 setenv init /sbin/init
@@ -69,29 +83,27 @@ That's it! You now have root access.
 
 For permanent ssh access, you can do the following:
 
-Download and extract https://bitfab.org/dropbear-static-builds/dropbear-v2020.81-arm-none-linux-gnueabi-static.tgz 2 to somewhere.
+1. Download and extract https://bitfab.org/dropbear-static-builds/dropbear-v2020.81-arm-none-linux-gnueabi-static.tgz 2 to somewhere.
 
-Keep extracting until you can see the file called: `dropbearmulti`.
+2. Keep extracting until you can see the file called: `dropbearmulti`.
 
-Then start a temporary HTTP server using python:
+3. Then start a temporary HTTP server using python:
 
 ```sh
 python -m http.server
 ```
 
-Make sure to run the command in the same directory as the `dropbearmulti` file.
+4. Make sure to run the command in the same directory as the `dropbearmulti` file.
+   The URL should be something like:
+   `http://10.0.0.143:8000/dropbearmulti`
 
-The URL should be something like:
-`http://10.0.0.143:8000/dropbearmulti`
-
-Download the ssh script in the `ssh` folder in this repository.
-
-Also place the script in the same folder as `dropbearmulti`:
-`http://10.0.0.143:8000/installssh.sh`
+5. Download the ssh script in the `ssh` folder in this repository.
+   Also place the script in the same folder as `dropbearmulti`:
+   `http://10.0.0.143:8000/installssh.sh`
 
 Make sure you change the IP to your computer.
 
-Then run on the busybox on the printer:
+6. Then run on the busybox on the printer:
 
 ```sh
 wget http://10.0.0.143:8000/installssh.sh -O /tmp/
