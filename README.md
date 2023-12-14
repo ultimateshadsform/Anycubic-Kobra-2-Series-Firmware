@@ -100,3 +100,19 @@ chmod +x /tmp/installssh.sh
 ```
 
 That's it! You now have permanent ssh access.
+
+## Firmware Extraction
+
+Thanks [Sineos](https://klipper.discourse.group/u/Sineos) for the firmware extraction commands!
+
+To extract update.swu you can run:
+
+```sh
+cpio -idv < update.swu
+```
+
+To extract the rootfs you can run:
+
+```sh
+unsquashfs rootfs
+```
