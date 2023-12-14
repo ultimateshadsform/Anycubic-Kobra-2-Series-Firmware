@@ -140,3 +140,7 @@ https://gitlab.com/weidongshan/tina-d1-h
 https://bbs.aw-ol.com/topic/1034
 
 https://bbs.aw-ol.com/assets/uploads/files/1645007527374-r528_user_manual_v1.3.pdf
+
+We have found the sdk here: https://d1.docs.aw-ol.com/study/study_3getsdktoc/#sdk_3
+
+But you need an account with level 2 access which can be achieved by liking posts, following people and replying to posts.
