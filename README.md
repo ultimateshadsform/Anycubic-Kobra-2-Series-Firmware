@@ -24,9 +24,9 @@ This repository contains things related to the Anycubic Kobra 2 Series 3D printe
 
 At the moment the only way to get root access is to use the serial console. The serial console is available on the 4 pin header on the mainboard.
 
-Once basic serial communication is established, you can send the following commands to get root access:
+UART: 3 Volt 115200 baud rate.
 
-<!-- steps -->
+Once basic serial communication is established, you can send the following commands to get root access:
 
 1. Hold down the `S` key while powering on the printer.
 
