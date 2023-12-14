@@ -8,7 +8,7 @@ import (
 )
 
 var (
-	baseURL      = "https://cdn.cloud-universe.anycubic.com/ota/K2Pro/AC104_K2Pro_%d.%d.%d_%d.%d.%d_update.zip"
+	baseURL      = "https://cdn.cloud-universe.anycubic.com/ota/K2/AC104_K2_%d.%d.%d_%d.%d.%d_update.zip"
 	maxThreads   = 1000
 	successFile  = "successful_urls.txt"
 	waitGroup    sync.WaitGroup
