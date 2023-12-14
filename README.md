@@ -128,3 +128,13 @@ To extract the rootfs you can run:
 ```sh
 unsquashfs rootfs
 ```
+
+## Custom Firmware?
+
+Right now, there is no custom firmware for the Anycubic Kobra 2 Series.
+
+But I have some links which the community has shared that may get us closer to custom firmware:
+
+https://gitlab.com/weidongshan/tina-d1-h
+
+https://bbs.aw-ol.com/topic/1034
