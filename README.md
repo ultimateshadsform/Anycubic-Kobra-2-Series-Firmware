@@ -81,34 +81,21 @@ Now you can login with the password you set.
 
 That's it! You now have root access.
 
+Thanks [rol](https://klipper.discourse.group/u/rol) for the commands!
+
 For permanent ssh access, you can do the following:
 
-1. Download and extract https://bitfab.org/dropbear-static-builds/dropbear-v2020.81-arm-none-linux-gnueabi-static.tgz 2 to somewhere.
-
-2. Keep extracting until you can see the file called: `dropbearmulti`.
-
-3. Then start a temporary HTTP server using python:
-
 ```sh
-python -m http.server
-```
+wget http://bin.entware.net/armv7sf-k3.2/installer/generic.sh
+chmod 755 generic.sh
+./generic.sh
+sed -i '$i\/opt/etc/init.d/rc.unslung start' /etc/rc.local
+echo 'export PATH="$PATH:/opt/sbin:/opt/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"' >> /etc/profile
+reboot
 
-4. Make sure to run the command in the same directory as the `dropbearmulti` file.
-   The URL should be something like:
-   `http://10.0.0.143:8000/dropbearmulti`
-
-5. Download the ssh script in the `ssh` folder in this repository.
-   Also place the script in the same folder as `dropbearmulti`:
-   `http://10.0.0.143:8000/installssh.sh`
-
-Make sure you change the IP to your computer.
-
-6. Then run on the busybox on the printer:
-
-```sh
-wget http://10.0.0.143:8000/installssh.sh -O /tmp/
-chmod +x /tmp/installssh.sh
-/tmp/installssh.sh
+opkg update
+opkg install dropbear
+reboot
 ```
 
 That's it! You now have permanent ssh access.
