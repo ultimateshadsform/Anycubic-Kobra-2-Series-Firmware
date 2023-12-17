@@ -130,4 +130,4 @@ https://bbs.aw-ol.com/assets/uploads/files/1645007527374-r528_user_manual_v1.3.p
 
 We have found the sdk here: https://d1.docs.aw-ol.com/study/study_3getsdktoc/#sdk_3
 
-But you need an account with level 2 access which can be achieved by liking posts, following people and replying to posts.
+Here is a more recent version of the SDK which you can download: https://klipper.discourse.group/t/printer-cfg-for-anycubic-kobra-2-plus-pro-max/11658/95?u=ultimatelifeform
