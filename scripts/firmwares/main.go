@@ -8,7 +8,8 @@ import (
 )
 
 var (
-	baseURL      = "https://cdn.cloud-universe.anycubic.com/ota/K2/AC104_K2_%d.%d.%d_%d.%d.%d_update.zip"
+	machine      = "K2Max"
+	baseURL      = "https://cdn.cloud-universe.anycubic.com/ota/%s/AC104_%s_%d.%d.%d_%d.%d.%d_update.zip"
 	maxThreads   = 1000
 	successFile  = "successful_urls.txt"
 	waitGroup    sync.WaitGroup
@@ -18,7 +19,7 @@ var (
 
 func checkVersion(major1, minor1, patch1, major2, minor2, patch2 int) {
 	defer waitGroup.Done()
-	url := fmt.Sprintf(baseURL, major1, minor1, patch1, major2, minor2, patch2)
+	url := fmt.Sprintf(baseURL, machine, machine, major1, minor1, patch1, major2, minor2, patch2)
 
 	threadSem <- struct{}{}        // acquire semaphore
 	defer func() { <-threadSem }() // release semaphore
