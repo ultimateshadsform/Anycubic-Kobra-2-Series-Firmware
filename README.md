@@ -20,6 +20,10 @@ This repository contains things related to the Anycubic Kobra 2 Series 3D printe
 
 6. Then it should be detected and you can update the firmware via usb.
 
+   ### Notes:
+
+   The firmwares are uploaded using git-lfs so you may need to download git-lfs to work with large files such as these.
+
 ## Root
 
 At the moment the only way to get root access is to use the serial console. The serial console is available on the 4 pin header on the mainboard.
