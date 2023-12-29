@@ -11,7 +11,7 @@ var (
 	machine      = "K2Max"
 	baseURL      = "https://cdn.cloud-universe.anycubic.com/ota/%s/AC104_%s_%d.%d.%d_%d.%d.%d_update.zip"
 	maxThreads   = 1000
-	successFile  = "successful_urls.txt"
+	successFile  = fmt.Sprintf("%s_success.txt", machine)
 	waitGroup    sync.WaitGroup
 	threadSem    = make(chan struct{}, maxThreads)
 	successMutex sync.Mutex
