@@ -22,6 +22,8 @@ This repository contains things related to the Anycubic Kobra 2 Series 3D printe
 
    ### Notes:
 
+   To update to version 3.05 you first need to update via 3.0.3.
+
    The firmwares are uploaded using git-lfs so you may need to download git-lfs to work with large files such as these.
 
 ## Root
