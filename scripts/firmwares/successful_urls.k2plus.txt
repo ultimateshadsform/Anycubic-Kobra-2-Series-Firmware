@@ -1,0 +1,6 @@
+Success: https://cdn.cloud-universe.anycubic.com/ota/K2Plus/AC104_K2Plus_1.1.0_2.1.0_update.zip
+Success: https://cdn.cloud-universe.anycubic.com/ota/K2Plus/AC104_K2Plus_1.1.0_2.1.3_update.zip
+Success: https://cdn.cloud-universe.anycubic.com/ota/K2Plus/AC104_K2Plus_1.1.0_2.1.1_update.zip
+Success: https://cdn.cloud-universe.anycubic.com/ota/K2Plus/AC104_K2Plus_1.1.0_2.3.3_update.zip
+Success: https://cdn.cloud-universe.anycubic.com/ota/K2Plus/AC104_K2Plus_1.1.0_2.3.9_update.zip
+Success: https://cdn.cloud-universe.anycubic.com/ota/K2Plus/AC104_K2Plus_1.1.0_2.3.5_update.zip
