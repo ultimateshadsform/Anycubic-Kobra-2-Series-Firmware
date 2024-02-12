@@ -2,6 +2,10 @@
 
 This repository contains things related to the Anycubic Kobra 2 Series 3D printer.
 
+## Custom Firmware?
+
+Not yet, but we are working on it. But don't expect anything soon. It will take a long long time.
+
 ## Discussion
 
 - [Link (klipper.discourse.group)](https://klipper.discourse.group/t/printer-cfg-for-anycubic-kobra-2-plus-pro-max/11658)
@@ -135,7 +139,3 @@ unsquashfs rootfs
 ## Encrypted firmware? WHAT THE HELL???
 
 Check out: [my script](https://github.com/ultimateshadsform/Anycubic-Kobra-2-Series-Firmware/blob/main/scripts/firmwares/decryptthatbitch.py)
-
-## Custom Firmware?
-
-Not yet, but we are working on it. But don't expect anything soon. It will take a long long time.
