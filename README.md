@@ -6,6 +6,8 @@ This repository contains things related to the Anycubic Kobra 2 Series 3D printe
 
 Not yet, but we are working on it. But don't expect anything soon. It will take a long long time.
 
+We do plan to release the tools repo eventually that will allow you to create custom firmware with modifications you want.
+
 ## Discussion
 
 - [Link (klipper.discourse.group)](https://klipper.discourse.group/t/printer-cfg-for-anycubic-kobra-2-plus-pro-max/11658)
@@ -32,7 +34,7 @@ Not yet, but we are working on it. But don't expect anything soon. It will take 
 
    ### Notes:
 
-   To update to version 3.05 you first need to update via 3.0.3.
+   To update to version 3.0.5 you first need to update via 3.0.3.
 
    The firmwares are uploaded using git-lfs so you may need to download git-lfs to work with large files such as these.
 
@@ -136,6 +138,6 @@ To extract the rootfs you can run:
 unsquashfs rootfs
 ```
 
-## Encrypted firmware? WHAT THE HELL???
+## Encrypted firmware?
 
-Check out: [my script](https://github.com/ultimateshadsform/Anycubic-Kobra-2-Series-Firmware/blob/main/scripts/firmwares/decryptthatbitch.py)
+Check out: [my script](./scripts/ack2_swu_decrypt.py)

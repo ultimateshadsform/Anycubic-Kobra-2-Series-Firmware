@@ -1,5 +1,0 @@
-Success: https://cdn.cloud-universe.anycubic.com/ota/K2Max/AC104_K2Max_1.1.0_2.1.0_update.zip
-Success: https://cdn.cloud-universe.anycubic.com/ota/K2Max/AC104_K2Max_1.1.0_2.1.1_update.zip
-Success: https://cdn.cloud-universe.anycubic.com/ota/K2Max/AC104_K2Max_1.1.0_2.1.3_update.zip
-Success: https://cdn.cloud-universe.anycubic.com/ota/K2Max/AC104_K2Max_1.1.0_2.3.5_update.zip
-Success: https://cdn.cloud-universe.anycubic.com/ota/K2Max/AC104_K2Max_1.1.0_2.3.9_update.zip
