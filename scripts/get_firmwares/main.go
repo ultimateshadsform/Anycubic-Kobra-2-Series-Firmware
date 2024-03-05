@@ -9,7 +9,7 @@ import (
 
 var (
 	machine      = "K2Max"
-	extensions   = []string{"bin", "zip"}
+	extensions   = []string{"bin", "zip", "swu"}
 	baseURL      = "https://cdn.cloud-universe.anycubic.com/ota/%s/AC104_%s_1.1.0_%d.%d.%d_update.%s"
 	maxThreads   = 1000
 	successFile  = fmt.Sprintf("%s_success.txt", machine)
