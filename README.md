@@ -10,6 +10,8 @@ We do plan to release the tools repo eventually that will allow you to create cu
 
 ## Discussion
 
+- [Telegram Group](https://t.me/kobra2modding)
+
 - [Link (klipper.discourse.group)](https://klipper.discourse.group/t/printer-cfg-for-anycubic-kobra-2-plus-pro-max/11658)
 
 ## Community Links
