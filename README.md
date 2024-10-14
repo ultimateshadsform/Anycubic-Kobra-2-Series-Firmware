@@ -19,6 +19,15 @@ This repository contains things related to the Anycubic Kobra 2 Series 3D printe
 - [Kobra2ProInsights](https://github.com/1coderookie/Kobra2ProInsights): A collection of insights and findings about the Kobra 2 Pro and some other printers
 - [Kobra Unleashed](https://github.com/anjomro/kobra-unleashed): A custom frontend/GUI for the Kobra 2 Series via MQTT
 
+## Prerequisites
+
+> [!WARNING]
+> For the python scripts to work, you will need to install `pycryptodome`
+>
+> ```sh
+> pip install pycryptodome
+> ```
+
 ## Firmware Update via USB
 
 > [!CAUTION]
