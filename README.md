@@ -22,6 +22,10 @@ We do plan to release the tools repo eventually that will allow you to create cu
 
 ## Firmware Update via USB
 
+> [!CAUTION]
+> The K2 Pro firmware is **NOT COMPATIBLE** with the K2 Machine.
+> These machines are completely different in firmware so make sure you have the correct firmware for the correct machine.
+
 1. To update the firmware via USB, you need to do the following:
 
 2. Format a USB drive to FAT32 or exFAT.
